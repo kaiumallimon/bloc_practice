@@ -1,16 +1,28 @@
-# bloc_tutorial
+# flutter-bloc-practice
 
-A new Flutter project.
+`flutter_bloc` is a state management library that allow users to seperate their application's business logics from the ui elements.
 
-## Getting Started
+### Get started with bloc
 
-This project is a starting point for a Flutter application.
+Run the following command and that's it, you're good to go.
 
-A few resources to get you started if this is your first Flutter project:
+```bash
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+flutter pub add equatable flutter_bloc # Equatable is a object comparing package, it's a good practice to use equatable with bloc
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+There are two ways `bloc` can be used for local state management. 
+- Cubit
+- Bloc
+
+Cubit is a straightforward process, it directly works on the event. On the other hand, the Bloc process needs a event handler to work with the states.
+
+### Example
+There are two examples are available inside the `/lib` folder. 
+- Counter: Simple application to count with a counter variable. (Both of the cubit and bloc example are available)
+- Todo: A todo application created following the bloc, contains bloc states, events.
+
+
+### Author
+
+[Kaium Al Limon](https://www.facebook.com/lemon.exee)
